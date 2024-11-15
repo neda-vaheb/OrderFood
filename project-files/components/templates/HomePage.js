@@ -9,16 +9,16 @@ import styles from "./HomePage.module.css";
 
 function HomePage() {
   return (
-    <div className={styles.container}>  
-       <Banner/>
-       <Atributes/>
-       <Definition/>
-       <Companies/>
-       <Instruction/>
-       <Guide/>
-       <Restrictions/>
+    <div className={styles.container}>
+      <Banner />
+      <Atributes />
+      <Definition />
+      <Companies />
+      <Instruction />
+      <Guide />
+      <Restrictions />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

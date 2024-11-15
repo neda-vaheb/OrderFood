@@ -7,14 +7,11 @@ import Card from "../modules/Card";
 function CategoriesPage({ data }) {
   const [query, setQuery] = useState({ difficulty: "", time: "" });
   const router = useRouter();
-useEffect(()=>{
-
-  const{difficulty , time} =router.query;
-  if(query.difficulty !== difficulty || query.time !== time)
-    setQuery({difficulty,time})
-  
-  
-},[])
+  useEffect(() => {
+    const { difficulty, time } = router.query;
+    if (query.difficulty !== difficulty || query.time !== time)
+      setQuery({ difficulty, time });
+  }, []);
   const changeHandler = (event) => {
     setQuery({ ...query, [event.target.name]: event.target.value });
   };

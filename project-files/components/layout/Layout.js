@@ -13,7 +13,9 @@ function Layout({ children }) {
         </div>
       </header>
       <div className={styles.container}>{children}</div>
-      <footer className={styles.footer}>Next.js course | BotoFood Project | Develop By Neda </footer>
+      <footer className={styles.footer}>
+        Next.js course | BotoFood Project | Develop By Neda{" "}
+      </footer>
     </>
   );
 }

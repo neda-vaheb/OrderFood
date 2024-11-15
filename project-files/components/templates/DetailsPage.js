@@ -23,8 +23,8 @@ function DetailsPage(props) {
           <div>
             <h3>{name}</h3>
             <span>
-            <Location /> {details[0].Cuisine}
-          </span>
+              <Location /> {details[0].Cuisine}
+            </span>
             <span className={styles.price}>
               <Dollar />
               {discount ? (price * (100 - discount)) / 100 : price}$

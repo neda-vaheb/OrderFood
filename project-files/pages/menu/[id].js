@@ -1,13 +1,15 @@
-import {useRouter} from "next/router"
+import { useRouter } from "next/router";
 import DetailsPage from "../../components/templates/DetailsPage";
 function FoodDetails({ data }) {
   const router = useRouter();
-  if(router.isFallback){
-    return(<h2>Laoding Page ...</h2>)
+  if (router.isFallback) {
+    return <h2>Laoding Page ...</h2>;
   }
-  return <div>
-    <DetailsPage {...data}/>
-    </div>;
+  return (
+    <div>
+      <DetailsPage {...data} />
+    </div>
+  );
 }
 
 export default FoodDetails;
